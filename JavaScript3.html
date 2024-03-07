@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+<p id="p4"></p>
+<p id="p5"></p>
+<p id="p6"></p>
+</body>
+<script>
+
+    //Function : block of statements used to perform operations.
+     var obj1 = {
+                    name:"Surbhi Saraf",
+                    email:"surbhibsaraf@gmail.com",
+                  
+                    lecture :function()
+                    {
+                        return this.name+' '+this.email;
+                    },
+                    display :function()
+                    {
+                        return "You are returning the display value";
+                    }
+                }  //Object Syntax literal
+                document.getElementById('p1').innerHTML  = obj1.name;
+                document.getElementById('p2').innerHTML  = obj1.email;
+                document.getElementById('p3').innerHTML  = obj1.lecture();
+                document.getElementById('p4').innerHTML  = obj1.display();
+
+                function showMessage()
+                {
+                    return "YOU ARE CALLING";
+                }
+                document.getElementById('p5').innerHTML  = showMessage();
+
+               //Create a function getArea() to find the area of a rectangle and print the result
+               // in a paragraph.
+
+                /*function getArea()
+                {
+                    l=3,w=4;
+                    area = l*w;
+                    return "The area of rectangle is:"+area;
+                }*/
+                document.getElementById('p6').innerHTML  = getArea();
+
+                function getArea(l,w)
+                {
+                    
+                    area = l*w;
+                    return "The area of rectangle is:"+area;
+                }
+                document.getElementById('p6').innerHTML  = getArea(5,2);
+
+
+
+
+                
+
+</script>
+</html>

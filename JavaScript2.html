@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript Example 2</title>
+</head>
+<body>
+   
+<h1>Welcome to second javascript Example (array)</h1>
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+<p id="p4"></p>
+<p id="p5"></p>
+<p id="p6"></p>
+
+
+
+
+<script>
+
+    //Array :  Collection of similar type of data ( we need array to store or maintain large set of data of similar type under a single variable in a continuous memory location)
+    var num = [12,14,16,18];
+    document.getElementById('p1').innerHTML= num;
+    num[2]='abc'
+    document.getElementById('p2').innerHTML = num;
+    console.log(num[2]);
+    var name = ["Surbhi",'Rani','Pravin']
+    document.getElementById('p3').innerHTML = name;
+
+    //create array using constructor : //Constructor is a special method whose name is same as class name
+
+    var num1 = new Array();
+    num1[0]='One';
+    num1[1]='Two';
+    num1[2]='Three';
+    document.getElementById('p4').innerHTML = num1;
+
+    //Create an array of float by using constructor and print the array in a paragraph.
+
+
+    var num1 = new Array();
+    num1[0]= 4.5
+    num1[1]=0.55;
+    num1[2]=1.23;
+    num1[3]=8.433;
+    num1[4]=9.00;
+    document.getElementById('p5').innerHTML = num1;
+
+    //Object : Real life entity that has properties and behaviour
+
+    var obj1 = {
+                    name:"Surbhi Saraf",
+                    email:"surbhibsaraf@gmail.com",
+                    batch : 9963,
+                    lecture :function()
+                    {
+                        return this.name+ +this.email+ this.batch;
+                    }
+                };  //Object Syntax literal
+
+    var obj2  = new Object(); //Creating Object using constructor
+    obj2.name = "Surbhi";
+    obj2.email = "Surbhi@gmail.com";
+    obj2.batch = 9963;
+    
+
+    
+
+
+
+</script>
+</body>
+</html>
